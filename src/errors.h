@@ -29,6 +29,10 @@
 */
 
 #include "config.h"
+#include <locale.h>
+#include <libintl.h>
+
+#define gettext_noop(String) String
 
 enum {
 	ERR_SUCCESS,
@@ -43,13 +47,13 @@ enum {
 };
 
 static const char *KTS_ERRORS[] = {
-	"Success",
-	"Invalid username or password",
-	"Command not found",
-	"Permission denied",
-	"No command given",
-	"No user and command specified",
-	"No message and command specified",
-	"Unknown error calling the su command",
-	"Command passed is invalid"
+	gettext_noop("Success"),
+	gettext_noop("Invalid username or password"),
+	gettext_noop("Command not found"),
+	gettext_noop("Permission denied"),
+	gettext_noop("No command given"),
+	gettext_noop("No user and command specified"),
+	gettext_noop("No message and command specified"),
+	gettext_noop("Unknown error calling the su command"),
+	gettext_noop("Command passed is invalid")
 };
