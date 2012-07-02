@@ -47,6 +47,9 @@
 #include "config.h"
 #include "errors.h"
 
+#include <locale.h>
+#include <libintl.h>
+
 #ifdef SUDOPATH
 #include "sudo_backend.h"
 #endif
@@ -86,7 +89,7 @@ void Werror(int type, char *err_msg, int exit_true, int ret)
 {
 	GtkWidget *dialog_error;
 	if (!err_msg)
-		dialog_error = gtk_message_dialog_new(NULL, 0, GTK_MESSAGE_ERROR, GTK_BUTTONS_OK, "Could not run command");
+		dialog_error = gtk_message_dialog_new(NULL, 0, GTK_MESSAGE_ERROR, GTK_BUTTONS_OK, _("Could not run command"));
 	else
 		dialog_error = gtk_message_dialog_new(NULL, 0, GTK_MESSAGE_ERROR, GTK_BUTTONS_OK, err_msg);
 
@@ -232,9 +235,9 @@ int main(int argc, char *argv[])
 	}
 
 	if (explicit_username && !explicit_message)
-		message = g_strdup_printf("Please enter the\npassword for %s:", username);
+		message = g_strdup_printf(_("Please enter the\npassword for %s:"), username);
 	else if (!explicit_message)
-		message = g_strdup("Please enter the desired\nusername and password:");
+		message = g_strdup(_("Please enter the desired\nusername and password:"));
 
 	dialog = gtk_dialog_new_with_buttons(command, NULL, GTK_DIALOG_NO_SEPARATOR, GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, GTK_STOCK_OK, GTK_RESPONSE_OK, NULL);
 	gtk_window_set_title(GTK_WINDOW(dialog), cmd_argv[0]);
@@ -255,7 +258,7 @@ int main(int argc, char *argv[])
 	sizegroup = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
 	if (!explicit_username) {
 		hbox = gtk_hbox_new(FALSE, 6);
-		label = gtk_label_new("Username");
+		label = gtk_label_new(_("Username"));
 		align = gtk_alignment_new(0, 0.5, 0, 0);
 		gtk_container_add(GTK_CONTAINER(align), label);
 		gtk_size_group_add_widget(sizegroup, align);
@@ -266,7 +269,7 @@ int main(int argc, char *argv[])
 		gtk_container_add(GTK_CONTAINER(GTK_DIALOG(dialog)->vbox), hbox);
 	}
 	hbox = gtk_hbox_new(FALSE, 6);
-	label = gtk_label_new("Password");
+	label = gtk_label_new(_("Password"));
 	align = gtk_alignment_new(0, 0.5, 0, 0);
 	gtk_container_add(GTK_CONTAINER(align), label);
 	gtk_size_group_add_widget(sizegroup, align);
@@ -315,7 +318,7 @@ int main(int argc, char *argv[])
 			memset(password, '\0', strlen(password));
 			free(password);
 			if (error != ERR_SUCCESS) {
-				snprintf(err_msg, sizeof(err_msg), "Could not run '%s'", command);
+				snprintf(err_msg, sizeof(err_msg), _("Could not run '%s'"), command);
 				Werror(error, err_msg, 0, 0);
 				counter++;
 			}
