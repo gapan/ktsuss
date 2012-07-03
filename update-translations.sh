@@ -1,4 +1,9 @@
 #!/bin/sh
+#
+# Run this script when you modify translatable scripts in the source
+# files (ktsuss.c and errors.h).
+# This will update the ktsuss.pot file with the modified strings and
+# also update all .po files accordingly
 
 # Create fresh ktsuss.pot file
 xgettext -L C -o po/ktsuss.pot src/ktsuss.c
