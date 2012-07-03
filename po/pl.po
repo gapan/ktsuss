@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <sgasior1@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: Salix\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/\n"
+"POT-Creation-Date: 2012-07-03 02:03+0300\n"
+"PO-Revision-Date: 2012-07-03 09:46+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Polish (http://www.transifex.com/projects/p/salix/language/pl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: src/ktsuss.c:92
+msgid "Could not run command"
+msgstr "Nie można uruchomić komendy"
+
+#: src/ktsuss.c:238
+#, c-format
+msgid ""
+"Please enter the\n"
+"password for %s:"
+msgstr "Proszę podać \nhasło dla %s:"
+
+#: src/ktsuss.c:240
+msgid ""
+"Please enter the desired\n"
+"username and password:"
+msgstr "Wpisz żądaną \nnazwę użytkownika i hasło:"
+
+#: src/ktsuss.c:261
+msgid "Username"
+msgstr "Użytkownik"
+
+#: src/ktsuss.c:272
+msgid "Password"
+msgstr "Hasło"
+
+#: src/ktsuss.c:321
+#, c-format
+msgid "Could not run '%s'"
+msgstr "Nie można uruchomić '%s'"
+
+#: src/errors.h:50
+msgid "Success"
+msgstr "Sukces"
+
+#: src/errors.h:51
+msgid "Invalid username or password"
+msgstr ""
+
+#: src/errors.h:52
+msgid "Command not found"
+msgstr "Polecenie nie znalezione"
+
+#: src/errors.h:53
+msgid "Permission denied"
+msgstr "Dostęp zabroniony"
+
+#: src/errors.h:54
+msgid "No command given"
+msgstr "Brak podanego polecenia"
+
+#: src/errors.h:55
+msgid "No user and command specified"
+msgstr "Nie określony użytkownik i polecenie "
+
+#: src/errors.h:56
+msgid "No message and command specified"
+msgstr "Nie określona wiadomość i polecenie"
+
+#: src/errors.h:57
+msgid "Unknown error calling the su command"
+msgstr ""
+
+#: src/errors.h:58
+msgid "Command passed is invalid"
+msgstr ""

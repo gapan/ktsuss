@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <vlahavas@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: Salix\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/\n"
+"POT-Creation-Date: 2012-07-03 02:03+0300\n"
+"PO-Revision-Date: 2012-07-03 09:46+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: src/ktsuss.c:92
+msgid "Could not run command"
+msgstr "Δεν ήταν δυνατό να εκτελεστεί η εντολή"
+
+#: src/ktsuss.c:238
+#, c-format
+msgid ""
+"Please enter the\n"
+"password for %s:"
+msgstr "Παρακαλούμε εισάγετε τον\nκωδικό για το χρήστη %s:"
+
+#: src/ktsuss.c:240
+msgid ""
+"Please enter the desired\n"
+"username and password:"
+msgstr "Παρακαλούμε εισάγετε το επιθυμητό\nόνομα χρήστη και κωδικό:"
+
+#: src/ktsuss.c:261
+msgid "Username"
+msgstr "Όνομα χρήστη"
+
+#: src/ktsuss.c:272
+msgid "Password"
+msgstr "Κωδικός"
+
+#: src/ktsuss.c:321
+#, c-format
+msgid "Could not run '%s'"
+msgstr "Δεν ήταν δυνατό να εκτελεστεί το '%s'"
+
+#: src/errors.h:50
+msgid "Success"
+msgstr "Επιτυχία"
+
+#: src/errors.h:51
+msgid "Invalid username or password"
+msgstr "Μη έγκυρο όνομα χρήστη ή κωδικός"
+
+#: src/errors.h:52
+msgid "Command not found"
+msgstr "Η εντολή δεν βρέθηκε"
+
+#: src/errors.h:53
+msgid "Permission denied"
+msgstr "Άρνηση πρόσβασης"
+
+#: src/errors.h:54
+msgid "No command given"
+msgstr "Δεν δόθηκε εντολή"
+
+#: src/errors.h:55
+msgid "No user and command specified"
+msgstr "Δεν ορίστηκαν χρήστης και εντολή"
+
+#: src/errors.h:56
+msgid "No message and command specified"
+msgstr "Δεν ορίστηκαν μήνυμα και εντολή"
+
+#: src/errors.h:57
+msgid "Unknown error calling the su command"
+msgstr "Άγνωστο σφάλμα κατά την εκτέλεση της εντολής su"
+
+#: src/errors.h:58
+msgid "Command passed is invalid"
+msgstr "Η εντολή που δόθηκε δεν ήταν έγκυρη"
