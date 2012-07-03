@@ -149,6 +149,11 @@ void tty_raw(int ttyfd)
 
 int main(int argc, char *argv[])
 {
+	setlocale (LC_ALL, "");
+	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+	bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
+	textdomain (GETTEXT_PACKAGE);
+
 	gboolean explicit_username = FALSE;
 	gboolean explicit_message = FALSE;
 	int error = 0;
