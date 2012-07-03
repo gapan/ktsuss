@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/\n"
-"POT-Creation-Date: 2012-07-03 02:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-03 15:15+0300\n"
 "PO-Revision-Date: 2012-07-03 09:46+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
 #: src/ktsuss.c:92
@@ -26,7 +26,9 @@ msgstr "このコマンドは、実行できません。"
 msgid ""
 "Please enter the\n"
 "password for %s:"
-msgstr "%s のためのパスワードを\n入力してください。"
+msgstr ""
+"%s のためのパスワードを\n"
+"入力してください。"
 
 #: src/ktsuss.c:240
 msgid ""

@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # gapan <vlahavas@gmail.com>, 2011.
 # Hugo Carvalho <hugokarvalho@hotmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/\n"
-"POT-Creation-Date: 2012-07-03 02:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-03 15:15+0300\n"
 "PO-Revision-Date: 2012-07-03 09:46+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_PT\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/ktsuss.c:92
@@ -28,13 +28,17 @@ msgstr "Não foi possível executar o comando"
 msgid ""
 "Please enter the\n"
 "password for %s:"
-msgstr "Por favor, insira a\na senha para %s:"
+msgstr ""
+"Por favor, insira a\n"
+"a senha para %s:"
 
 #: src/ktsuss.c:240
 msgid ""
 "Please enter the desired\n"
 "username and password:"
-msgstr "Por favor, insira o nome do\nutilizador e senha desejados"
+msgstr ""
+"Por favor, insira o nome do\n"
+"utilizador e senha desejados"
 
 #: src/ktsuss.c:261
 msgid "Username"

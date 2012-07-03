@@ -1,22 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Yarema aka Knedlyk <yupadmin@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/\n"
-"POT-Creation-Date: 2012-07-03 02:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-03 15:15+0300\n"
 "PO-Revision-Date: 2012-07-03 11:40+0000\n"
 "Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: src/ktsuss.c:92
 msgid "Could not run command"
@@ -27,13 +28,17 @@ msgstr "Не можу запустити команду"
 msgid ""
 "Please enter the\n"
 "password for %s:"
-msgstr "Будь ласка, введіть\nпароль для %s:"
+msgstr ""
+"Будь ласка, введіть\n"
+"пароль для %s:"
 
 #: src/ktsuss.c:240
 msgid ""
 "Please enter the desired\n"
 "username and password:"
-msgstr "Будь ласка, введіть бажану\nназву користувача і пароль:"
+msgstr ""
+"Будь ласка, введіть бажану\n"
+"назву користувача і пароль:"
 
 #: src/ktsuss.c:261
 msgid "Username"
