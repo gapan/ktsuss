@@ -46,9 +46,16 @@ case $BUILD_SUDO in
 esac
 AM_CONDITIONAL(BUILD_WITH_SUDO, test "x$BUILD_SUDO" = "xyes")
 
+IT_PROG_INTLTOOL([0.35.0])
+GETTEXT_PACKAGE=ktsuss
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
+AM_GLIB_GNU_GETTEXT
+
 dnl output
 AC_OUTPUT(
 	Makefile
 	src/Makefile
 	pixmaps/Makefile
+	po/Makefile.in
 	)
