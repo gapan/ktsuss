@@ -1,6 +1,6 @@
 CLEANFILES = *~
 
-SUBDIRS = src pixmaps
+SUBDIRS = src pixmaps po
 MAINTAINERCLEANFILES = Makefile.in configure aclocal.m4 \
 			config.h config.h.in
 AUTOMAKE_OPTIONS = foreign dist-bzip2
