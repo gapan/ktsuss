@@ -1,0 +1,4 @@
+# List of source files containing translatable strings.
+
+src/ktsuss.c
+src/errors.h
