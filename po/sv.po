@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
+# Ingemar Karlsson <ingemar@ingk.se>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-03 15:15+0300\n"
-"PO-Revision-Date: 2012-07-03 09:46+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/\n"
+"POT-Creation-Date: 2012-07-03 02:03+0300\n"
+"PO-Revision-Date: 2012-07-03 15:27+0000\n"
+"Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/ktsuss.c:92
@@ -26,17 +27,13 @@ msgstr "Kunde inte köra kommando"
 msgid ""
 "Please enter the\n"
 "password for %s:"
-msgstr ""
-"Skriv in\n"
-"lösenordet för %s:"
+msgstr "Skriv in\nlösenordet för %s:"
 
 #: src/ktsuss.c:240
 msgid ""
 "Please enter the desired\n"
 "username and password:"
-msgstr ""
-"Skriv in önskad\n"
-"användarnamn och lösenord:"
+msgstr "Skriv in önskad\nanvändarnamn och lösenord:"
 
 #: src/ktsuss.c:261
 msgid "Username"
@@ -57,7 +54,7 @@ msgstr "Lyckades"
 
 #: src/errors.h:51
 msgid "Invalid username or password"
-msgstr ""
+msgstr "Ogiltigt användarnamn eller lösenord"
 
 #: src/errors.h:52
 msgid "Command not found"
@@ -81,8 +78,8 @@ msgstr "Inget meddelande och kommando angivet"
 
 #: src/errors.h:57
 msgid "Unknown error calling the su command"
-msgstr ""
+msgstr "Okänt fel vid anrop till su kommandot"
 
 #: src/errors.h:58
 msgid "Command passed is invalid"
-msgstr ""
+msgstr "Kommandot som skickades är ogiltig"

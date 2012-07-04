@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
+#   <kerd89@gmail.com>, 2012.
 # Kerd <kerd89@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-03 15:15+0300\n"
-"PO-Revision-Date: 2012-07-03 09:46+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/\n"
+"POT-Creation-Date: 2012-07-03 02:03+0300\n"
+"PO-Revision-Date: 2012-07-03 16:29+0000\n"
+"Last-Translator: Kerd <kerd89@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/ktsuss.c:92
@@ -54,7 +55,7 @@ msgstr "Successo"
 
 #: src/errors.h:51
 msgid "Invalid username or password"
-msgstr ""
+msgstr "Nome utente o password non validi"
 
 #: src/errors.h:52
 msgid "Command not found"
@@ -78,8 +79,8 @@ msgstr "Nessun messaggio e comando specificato"
 
 #: src/errors.h:57
 msgid "Unknown error calling the su command"
-msgstr ""
+msgstr "Errore sconosciuto eseguendo su"
 
 #: src/errors.h:58
 msgid "Command passed is invalid"
-msgstr ""
+msgstr "Il comando passato non è valido"
