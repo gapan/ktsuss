@@ -94,7 +94,7 @@ void Werror(int type, char *err_msg, int exit_true, int ret)
 		dialog_error = gtk_message_dialog_new(NULL, 0, GTK_MESSAGE_ERROR, GTK_BUTTONS_OK, err_msg);
 
 	gtk_window_set_title(GTK_WINDOW(dialog_error), "ktsuss");
-	gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog_error), KTS_ERRORS[type]);
+	gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog_error), gettext(KTS_ERRORS[type]));
 	gtk_dialog_run(GTK_DIALOG(dialog_error));
 	gtk_widget_destroy(dialog_error);
 
