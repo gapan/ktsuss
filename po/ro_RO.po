@@ -3,83 +3,83 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Gambit <gambit73@gmail.com>, 2012
+# Arian - Cazare Muncitori <arianserv@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-07-03 15:15+0300\n"
 "PO-Revision-Date: 2015-08-11 11:24+0000\n"
-"Last-Translator: Dimitris Glezos <glezos@transifex.com>\n"
-"Language-Team: Dutch (http://www.transifex.com/gapan/salix/language/nl/)\n"
+"Last-Translator: Arian - Cazare Muncitori <arianserv@gmail.com>\n"
+"Language-Team: Romanian (Romania) (http://www.transifex.com/gapan/salix/language/ro_RO/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: src/ktsuss.c:92
 msgid "Could not run command"
-msgstr "Kan het commando niet uitvoeren"
+msgstr "Nu se poate efectua comanda"
 
 #: src/ktsuss.c:238
 #, c-format
 msgid ""
 "Please enter the\n"
 "password for %s:"
-msgstr "Vul het wachtwoord\nin voor%s:"
+msgstr "Vă rugăm să introduceţi\nparola pentru %s:"
 
 #: src/ktsuss.c:240
 msgid ""
 "Please enter the desired\n"
 "username and password:"
-msgstr "Vul de gewenste\nloginnaam en wachtwoord in:"
+msgstr "Vă rugăm să introduceţi\nnumele şi parola dorită:"
 
 #: src/ktsuss.c:261
 msgid "Username"
-msgstr "Login naam"
+msgstr "Nume utilizator"
 
 #: src/ktsuss.c:272
 msgid "Password"
-msgstr "Wachtwoord"
+msgstr "Parola"
 
 #: src/ktsuss.c:321
 #, c-format
 msgid "Could not run '%s'"
-msgstr "Kon '%s' niet uitvoeren"
+msgstr "Nu se poate rula '%s'"
 
 #: src/errors.h:50
 msgid "Success"
-msgstr "Succes"
+msgstr "Realizat"
 
 #: src/errors.h:51
 msgid "Invalid username or password"
-msgstr "Ongeldige gebruikersnaam of wachtwoord"
+msgstr "Utilizator si comandă, invalide"
 
 #: src/errors.h:52
 msgid "Command not found"
-msgstr "Commando niet gevonden"
+msgstr "Comandă neidentificată"
 
 #: src/errors.h:53
 msgid "Permission denied"
-msgstr "Toegang geweigerd"
+msgstr "Permisiune refuzată"
 
 #: src/errors.h:54
 msgid "No command given"
-msgstr "Geen commando gegeven"
+msgstr "Nici-o comandă dată"
 
 #: src/errors.h:55
 msgid "No user and command specified"
-msgstr "Geen gebruiker en commando gedefinieerd"
+msgstr "Utilizator şi comandă nespecificate"
 
 #: src/errors.h:56
 msgid "No message and command specified"
-msgstr "Geen bericht en commando gedefinieerd"
+msgstr "Mesaj şi comnadă nespecificate"
 
 #: src/errors.h:57
 msgid "Unknown error calling the su command"
-msgstr "Onbekende fout tijdens uitvoer van het su commando"
+msgstr "O eroare necunoscută solicită comanda SU"
 
 #: src/errors.h:58
 msgid "Command passed is invalid"
-msgstr "Ingevoerd commando is ongeldig"
+msgstr "Comnada transmisă este invalidă"

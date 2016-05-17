@@ -3,83 +3,83 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Gambit <gambit73@gmail.com>, 2012
+# Georgi Georgiev <georgiev_1994@abv.bg>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-07-03 15:15+0300\n"
 "PO-Revision-Date: 2015-08-11 11:24+0000\n"
-"Last-Translator: Dimitris Glezos <glezos@transifex.com>\n"
-"Language-Team: Dutch (http://www.transifex.com/gapan/salix/language/nl/)\n"
+"Last-Translator: Georgi Georgiev <georgiev_1994@abv.bg>\n"
+"Language-Team: Bulgarian (http://www.transifex.com/gapan/salix/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
+"Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/ktsuss.c:92
 msgid "Could not run command"
-msgstr "Kan het commando niet uitvoeren"
+msgstr "Не може да се изпълни команда"
 
 #: src/ktsuss.c:238
 #, c-format
 msgid ""
 "Please enter the\n"
 "password for %s:"
-msgstr "Vul het wachtwoord\nin voor%s:"
+msgstr "Моля, въведете\nпаролата за %s:"
 
 #: src/ktsuss.c:240
 msgid ""
 "Please enter the desired\n"
 "username and password:"
-msgstr "Vul de gewenste\nloginnaam en wachtwoord in:"
+msgstr "Моля, въведете избраните\nиме и парола:"
 
 #: src/ktsuss.c:261
 msgid "Username"
-msgstr "Login naam"
+msgstr "Име"
 
 #: src/ktsuss.c:272
 msgid "Password"
-msgstr "Wachtwoord"
+msgstr "Парола"
 
 #: src/ktsuss.c:321
 #, c-format
 msgid "Could not run '%s'"
-msgstr "Kon '%s' niet uitvoeren"
+msgstr "Не може да се изпълни '%s'"
 
 #: src/errors.h:50
 msgid "Success"
-msgstr "Succes"
+msgstr "Успех"
 
 #: src/errors.h:51
 msgid "Invalid username or password"
-msgstr "Ongeldige gebruikersnaam of wachtwoord"
+msgstr "Невалидно име или парола"
 
 #: src/errors.h:52
 msgid "Command not found"
-msgstr "Commando niet gevonden"
+msgstr "Командата не е намерена"
 
 #: src/errors.h:53
 msgid "Permission denied"
-msgstr "Toegang geweigerd"
+msgstr "Достъпът отказан"
 
 #: src/errors.h:54
 msgid "No command given"
-msgstr "Geen commando gegeven"
+msgstr "Не е дадена команда"
 
 #: src/errors.h:55
 msgid "No user and command specified"
-msgstr "Geen gebruiker en commando gedefinieerd"
+msgstr "Няма посочен потребител и команда"
 
 #: src/errors.h:56
 msgid "No message and command specified"
-msgstr "Geen bericht en commando gedefinieerd"
+msgstr "Няма посочено съобщение и команда"
 
 #: src/errors.h:57
 msgid "Unknown error calling the su command"
-msgstr "Onbekende fout tijdens uitvoer van het su commando"
+msgstr "Неизвестна грешка изпълнявайки команда su"
 
 #: src/errors.h:58
 msgid "Command passed is invalid"
-msgstr "Ingevoerd commando is ongeldig"
+msgstr "Приетата команда е невалидна"

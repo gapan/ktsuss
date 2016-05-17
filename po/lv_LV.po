@@ -3,83 +3,83 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Gambit <gambit73@gmail.com>, 2012
+# Gatis Kalniņš <>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-07-03 15:15+0300\n"
 "PO-Revision-Date: 2015-08-11 11:24+0000\n"
-"Last-Translator: Dimitris Glezos <glezos@transifex.com>\n"
-"Language-Team: Dutch (http://www.transifex.com/gapan/salix/language/nl/)\n"
+"Last-Translator: Gatis Kalniņš <>\n"
+"Language-Team: Latvian (Latvia) (http://www.transifex.com/gapan/salix/language/lv_LV/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: lv_LV\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
 #: src/ktsuss.c:92
 msgid "Could not run command"
-msgstr "Kan het commando niet uitvoeren"
+msgstr "Nevar izpildīt komandu"
 
 #: src/ktsuss.c:238
 #, c-format
 msgid ""
 "Please enter the\n"
 "password for %s:"
-msgstr "Vul het wachtwoord\nin voor%s:"
+msgstr "Lūdzu, ievadiet\nparoli priekš %s:"
 
 #: src/ktsuss.c:240
 msgid ""
 "Please enter the desired\n"
 "username and password:"
-msgstr "Vul de gewenste\nloginnaam en wachtwoord in:"
+msgstr "Lūdzu, ievadiet vēlamo\nlietotāju un paroli:"
 
 #: src/ktsuss.c:261
 msgid "Username"
-msgstr "Login naam"
+msgstr "Lietotājs"
 
 #: src/ktsuss.c:272
 msgid "Password"
-msgstr "Wachtwoord"
+msgstr "Parole"
 
 #: src/ktsuss.c:321
 #, c-format
 msgid "Could not run '%s'"
-msgstr "Kon '%s' niet uitvoeren"
+msgstr "Nevar palaist '%s'"
 
 #: src/errors.h:50
 msgid "Success"
-msgstr "Succes"
+msgstr "Sekmīgi"
 
 #: src/errors.h:51
 msgid "Invalid username or password"
-msgstr "Ongeldige gebruikersnaam of wachtwoord"
+msgstr "Nekorekts lietotājs vai parole"
 
 #: src/errors.h:52
 msgid "Command not found"
-msgstr "Commando niet gevonden"
+msgstr "Komanda nav atrasta"
 
 #: src/errors.h:53
 msgid "Permission denied"
-msgstr "Toegang geweigerd"
+msgstr "Piekļuve liegta"
 
 #: src/errors.h:54
 msgid "No command given"
-msgstr "Geen commando gegeven"
+msgstr "Nav dota komanda"
 
 #: src/errors.h:55
 msgid "No user and command specified"
-msgstr "Geen gebruiker en commando gedefinieerd"
+msgstr "Nav norādīts lietotājs un komanda"
 
 #: src/errors.h:56
 msgid "No message and command specified"
-msgstr "Geen bericht en commando gedefinieerd"
+msgstr "Nav norādīta komanda un paziņojums"
 
 #: src/errors.h:57
 msgid "Unknown error calling the su command"
-msgstr "Onbekende fout tijdens uitvoer van het su commando"
+msgstr "Nezināma kļūme izpildot su komandu"
 
 #: src/errors.h:58
 msgid "Command passed is invalid"
-msgstr "Ingevoerd commando is ongeldig"
+msgstr "Ievadītā komanda ir nekorekta"
