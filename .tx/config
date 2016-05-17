@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[salix.ktsuss-l10n]
+file_filter = po/<lang>.po
+source_file = po/ktsuss.pot
+source_lang = en
+
