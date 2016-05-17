@@ -38,8 +38,15 @@
 #include <sys/types.h>
 #include <errno.h>
 #include <pwd.h>
+
+#if defined(__FreeBSD__)
+#include <libutil.h>
+#include <utmpx.h>
+#else
 #include <pty.h>
 #include <utmp.h>
+#endif
+
 #include <termios.h>
 #include <glib.h>
 #include <gtk/gtk.h>
@@ -77,9 +84,9 @@ void say_help(char *str)
 /* Print's the about text to the terminal and exits with no error */
 void say_about(void)
 {
-	printf("%s - Copyright (c) 2007-2011 David B. Cortarello\n\n", PACKAGE_STRING);
+	printf("%s - Copyright (c) 2007-2014 David B. Cortarello\n\n", PACKAGE_STRING);
 	printf("Please report comments, suggestions and bugs to:\n\t%s\n\n", PACKAGE_BUGREPORT);
-	printf("Check for new versions at:\n\thttp://nomius.blogspot.com\n\n");
+	printf("Check for new versions at:\n\thttps://github.com/nomius/ktsuss\n\n");
 	exit(0);
 }
 

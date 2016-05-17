@@ -40,8 +40,15 @@
 #include <sys/types.h>
 #include <errno.h>
 #include <pwd.h>
+
+#if defined(__FreeBSD__)
+#include <libutil.h>
+#include <utmpx.h>
+#include <sys/signal.h>
+#else
 #include <pty.h>
 #include <utmp.h>
+#endif
 #include <termios.h>
 
 #include "errors.h"
@@ -86,6 +93,7 @@ static int init_su(int *fdpty, const char *username, const char *password, char 
 	if ((pid = forkpty(fdpty, NULL, NULL, NULL)) < 0) err(1, "forkpty()");
 	else if (pid == 0) {
 		setsid();
+		signal(SIGHUP, SIG_IGN);
 		execv(cmd[0], cmd);
 		err(1, "execv()");
 		exit(1);
@@ -127,7 +135,11 @@ static int init_su(int *fdpty, const char *username, const char *password, char 
 int check_password_su(const char *username, const char *password)
 {
 	int fdpty = 0, status = 0, pid = 0;
+#if defined(__FreeBSD__)
+	char *cmd[6] = { SUPATH, (char *)username, "-m", "-c", "exit", NULL };
+#else
 	char *cmd[6] = { SUPATH, (char *)username, "-p", "-c", "exit", NULL };
+#endif
 
 	pid = init_su(&fdpty, username, password, cmd);
 
@@ -136,19 +148,26 @@ int check_password_su(const char *username, const char *password)
 	end_su(fdpty);
 	close(fdpty);
 
-	if (!WIFEXITED(status))
-		return -1;
-	if (WEXITSTATUS(status) != 0)
-		return ERR_WRONG_USER_OR_PASSWD;
-	return ERR_SUCCESS;
+	if (WIFEXITED(status) && WEXITSTATUS(status) == 0)
+		return ERR_SUCCESS;
+	else
+		if (WIFSIGNALED(status)) {
+			fprintf(stderr, "Why I was signaled?: %d\n", WTERMSIG(status));
+			return -1;
+		}
+	return ERR_WRONG_USER_OR_PASSWD;
 }
 
 
 /* Run the given command as the given user */
 void run_su(char *username, char *password, char *command)
 {
+#if defined(__FreeBSD__)
+	char buf[BUFF_SIZE], *cmd[6] = { SUPATH, username, "-m", "-c", command, NULL };
+#else
 	char buf[BUFF_SIZE], *cmd[6] = { SUPATH, username, "-p", "-c", command, NULL };
-	int fdpty = 0, status = 0, tty = 1, i = 0;
+#endif
+	int fdpty = 0, status = 0, tty = 1;
 	pid_t pid = 0;
 	fd_set rfds;
 	struct timeval tv;
@@ -166,7 +185,8 @@ void run_su(char *username, char *password, char *command)
 	if (tty)
 		tty_raw(STDIN_FILENO);
 
-	while (!waitpid(pid, &status, WNOHANG)) {
+	while (1) {
+		waitpid(pid, &status, WNOHANG);
 
 		/* Ok, the program needs some interaction, so this will do it fine */
 		tv.tv_sec = 0;
@@ -178,8 +198,11 @@ void run_su(char *username, char *password, char *command)
 		if (select(MAX(fdpty, STDIN_FILENO)+1, &rfds, NULL, NULL, &tv) < 0) err(1, "select()");
 
 		if (FD_ISSET(fdpty, &rfds)) {
-			status = read(fdpty, buf, BUFF_SIZE);
-			write(STDOUT_FILENO, buf, status);
+			if ((status = read(fdpty, buf, BUFF_SIZE)) > 0)
+				write(STDOUT_FILENO, buf, status);
+			else
+				break;
+
 		}
 		else if (FD_ISSET(STDIN_FILENO, &rfds)) {
 			status = read(STDIN_FILENO, buf, BUFF_SIZE);
