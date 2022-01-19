@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Antonio Sardei <laplume@libero.it>, 2012
 # Kerd <kerd89@gmail.com>, 2012
-# Kerd <kerd89@gmail.com>, 2011
+# Kerd <kerd89@gmail.com>, 2011-2012
 # Antonio Sardei <laplume@libero.it>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-07-03 15:15+0300\n"
-"PO-Revision-Date: 2015-08-11 11:24+0000\n"
-"Last-Translator: Dimitris Glezos <glezos@transifex.com>\n"
+"PO-Revision-Date: 2017-09-19 09:11+0000\n"
+"Last-Translator: Antonio Sardei <laplume@libero.it>\n"
 "Language-Team: Italian (http://www.transifex.com/gapan/salix/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +40,7 @@ msgstr "Per favore inserisci il nome utente e password:"
 
 #: src/ktsuss.c:261
 msgid "Username"
-msgstr "Nome utente"
+msgstr "Nome Utente"
 
 #: src/ktsuss.c:272
 msgid "Password"
@@ -80,7 +81,7 @@ msgstr "Nessun messaggio e comando specificato"
 
 #: src/errors.h:57
 msgid "Unknown error calling the su command"
-msgstr "Errore sconosciuto eseguendo su"
+msgstr "Errore sconosciuto eseguendo il comando su"
 
 #: src/errors.h:58
 msgid "Command passed is invalid"

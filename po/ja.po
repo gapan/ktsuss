@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2016
+# ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2016
 # tsuren <hydrangea_and_snail@hotmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-07-03 15:15+0300\n"
-"PO-Revision-Date: 2015-08-19 08:49+0000\n"
-"Last-Translator: tsuren <hydrangea_and_snail@hotmail.com>\n"
+"PO-Revision-Date: 2017-09-19 09:11+0000\n"
+"Last-Translator: ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen.\n"
 "Language-Team: Japanese (http://www.transifex.com/gapan/salix/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,24 +22,24 @@ msgstr ""
 
 #: src/ktsuss.c:92
 msgid "Could not run command"
-msgstr "このコマンドは、実行できません。"
+msgstr "このコマンドを実行できません"
 
 #: src/ktsuss.c:238
 #, c-format
 msgid ""
 "Please enter the\n"
 "password for %s:"
-msgstr "%s のためのパスワードを\n入力してください。"
+msgstr "%s のパスワードを\n入力して下さい:"
 
 #: src/ktsuss.c:240
 msgid ""
 "Please enter the desired\n"
 "username and password:"
-msgstr "使用したいユーザネームと/nパスワードを入力してください。"
+msgstr "使用したいユーザ名と\nパスワードを入力して下さい:"
 
 #: src/ktsuss.c:261
 msgid "Username"
-msgstr "ユーザネーム"
+msgstr "ユーザ名"
 
 #: src/ktsuss.c:272
 msgid "Password"
@@ -46,7 +48,7 @@ msgstr "パスワード"
 #: src/ktsuss.c:321
 #, c-format
 msgid "Could not run '%s'"
-msgstr "'%s'は、使うことができません。"
+msgstr "'%s' は実行できません"
 
 #: src/errors.h:50
 msgid "Success"
@@ -54,23 +56,23 @@ msgstr "完了"
 
 #: src/errors.h:51
 msgid "Invalid username or password"
-msgstr "入力したユーザー名またはパスワードが間違っています。"
+msgstr "ユーザ名またはパスワードが間違っています"
 
 #: src/errors.h:52
 msgid "Command not found"
-msgstr "コマンドが、見つかりません。"
+msgstr "コマンドは見つかりません"
 
 #: src/errors.h:53
 msgid "Permission denied"
-msgstr "パーミッション拒否です。"
+msgstr "アクセス拒否されました"
 
 #: src/errors.h:54
 msgid "No command given"
-msgstr "実行するコマンドを、入力してください。"
+msgstr "与えられたコマンドがありません"
 
 #: src/errors.h:55
 msgid "No user and command specified"
-msgstr "ユーザとコマンドを設定してください。"
+msgstr "ユーザとコマンドが指定されていません"
 
 #: src/errors.h:56
 msgid "No message and command specified"
@@ -78,7 +80,7 @@ msgstr "メッセージとコマンドが設定されていません。"
 
 #: src/errors.h:57
 msgid "Unknown error calling the su command"
-msgstr "ｓｕの呼び出しに原因不明のエラーが発生"
+msgstr "ｓｕ コマンド実行に原因不明のエラーが発生しました"
 
 #: src/errors.h:58
 msgid "Command passed is invalid"
